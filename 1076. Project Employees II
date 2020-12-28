@@ -1,0 +1,40 @@
+1076. Project Employees II
+-- +-------------+---------+
+-- | Column Name | Type    |
+-- +-------------+---------+
+-- | project_id  | int     |
+-- | employee_id | int     |
+-- +-------------+---------+
+-- (project_id, employee_id) is the primary key of this table.
+-- employee_id is a foreign key to Employee table.
+ 
+-- Write an SQL query that reports all the projects that have the most employees.
+
+-- The query result format is in the following example:
+-- Project table:
+-- +-------------+-------------+
+-- | project_id  | employee_id |
+-- +-------------+-------------+
+-- | 1           | 1           |
+-- | 1           | 2           |
+-- | 1           | 3           |
+-- | 2           | 1           |
+-- | 2           | 4           |
+-- +-------------+-------------+
+
+-- Result table:
+-- +-------------+
+-- | project_id  |
+-- +-------------+
+-- | 1           |
+-- +-------------+
+-- The first project has 3 employees while the second one has 2.
+
+select a.project_id from 
+(
+    select project_id, 
+    rank() over(order by count(employee_id) desc) as rk
+    from 
+    Project
+    group by project_id
+) a where a.rk=1
