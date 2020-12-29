@@ -1,5 +1,7 @@
 0584. Find Customer Referee
 
+-- return the list of customers NOT referred by the person with id '2'.
+
 -- Given a table customer holding customers information and the referee.
 -- +------+------+-----------+
 -- | id   | name | referee_id|
@@ -11,8 +13,6 @@
 -- |    5 | Zack |         1 |
 -- |    6 | Mark |         2 |
 -- +------+------+-----------+
-
--- Write a query to return the list of customers NOT referred by the person with id '2'.
 
 -- For the sample data above, the result is:
 

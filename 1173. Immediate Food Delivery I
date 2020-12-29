@@ -1,20 +1,7 @@
 1173. Immediate Food Delivery I
--- Table: Delivery
--- +-----------------------------+---------+
--- | Column Name                 | Type    |
--- +-----------------------------+---------+
--- | delivery_id                 | int     |
--- | customer_id                 | int     |
--- | order_date                  | date    |
--- | customer_pref_delivery_date | date    |
--- +-----------------------------+---------+
--- delivery_id is the primary key of this table.
 
--- If the preferred delivery date of the customer is the same as the order date then the order is called immediate otherwise it's called scheduled.
+-- find the percentage of immediate orders in the table, rounded to 2 decimal places.
 
--- Write an SQL query to find the percentage of immediate orders in the table, rounded to 2 decimal places.
-
--- The query result format is in the following example:
 -- Delivery table:
 -- +-------------+-------------+------------+-----------------------------+
 -- | delivery_id | customer_id | order_date | customer_pref_delivery_date |
@@ -33,7 +20,6 @@
 -- +----------------------+
 -- | 33.33                |
 -- +----------------------+
--- The orders with delivery id 2 and 3 are immediate while the others are scheduled.
 
 select 
 Round(

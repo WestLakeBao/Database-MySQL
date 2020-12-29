@@ -1,9 +1,7 @@
 0534. Game Play Analysis III
 
 -- Write an SQL query that reports for each player and date, how many games played so far by the player. 
--- That is, the total number of games played by the player until that date. 
-
--- The query result format is in the following example:
+-- That is, the total number of games played by the player until that date.
 
 -- Activity table:
 -- +-----------+-----------+------------+--------------+

@@ -1,4 +1,5 @@
 0577. Employee Bonus
+
 -- Select all employee's name and bonus whose bonus is < 1000.
 
 -- Table:Employee
@@ -10,18 +11,16 @@
 -- |   3   | Brad   |  null     | 4000   |
 -- |   4   | Thomas |  3        | 4000   |
 -- +-------+--------+-----------+--------+
--- empId is the primary key column for this table.
--- Table: Bonus
 
+-- Table: Bonus
 -- +-------+-------+
 -- | empId | bonus |
 -- +-------+-------+
 -- | 2     | 500   |
 -- | 4     | 2000  |
 -- +-------+-------+
--- empId is the primary key column for this table.
--- Example ouput:
 
+-- Example ouput:
 -- +-------+-------+
 -- | name  | bonus |
 -- +-------+-------+
@@ -30,4 +29,6 @@
 -- | Brad  | null  |
 -- +-------+-------+
 
-select name, bonus from Employee E left join Bonus B on E.empId=B.Id and B.bonus < 1000 or B.bonus is NULL;
+select name, bonus
+from Employee E left join Bonus B
+on E.empId=B.Id and B.bonus < 1000 or B.bonus is NULL;

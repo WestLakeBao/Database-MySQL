@@ -1,26 +1,4 @@
 1068. Product Sales Analysis I
--- Table: Sales
--- +-------------+-------+
--- | Column Name | Type  |
--- +-------------+-------+
--- | sale_id     | int   |
--- | product_id  | int   |
--- | year        | int   |
--- | quantity    | int   |
--- | price       | int   |
--- +-------------+-------+
--- (sale_id, year) is the primary key of this table.
--- product_id is a foreign key to Product table.
--- Note that the price is per unit.
-
--- Table: Product
--- +--------------+---------+
--- | Column Name  | Type    |
--- +--------------+---------+
--- | product_id   | int     |
--- | product_name | varchar |
--- +--------------+---------+
--- product_id is the primary key of this table.
  
 -- Write an SQL query that reports all product names of the products in the Sales table along with their selling year and price.
 

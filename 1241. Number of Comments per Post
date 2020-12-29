@@ -1,17 +1,6 @@
 1241. Number of Comments per Post
--- Table: Submissions
--- +---------------+----------+
--- | Column Name   | Type     |
--- +---------------+----------+
--- | sub_id        | int      |
--- | parent_id     | int      |
--- +---------------+----------+
--- There is no primary key for this table, it may have duplicate rows.
--- Each row can be a post or comment on the post.
--- parent_id is null for posts.
--- parent_id for comments is sub_id for another post in the table.
- 
--- Write an SQL query to find number of comments per each post.
+
+-- find number of comments per each post.
 
 -- Result table should contain post_id and its corresponding number_of_comments, 
 -- and must be sorted by post_id in ascending order.
@@ -19,8 +8,6 @@
 -- Submissions may contain duplicate comments. You should count the number of unique comments per post.
 
 -- Submissions may contain duplicate posts. You should treat them as one post.
-
--- The query result format is in the following example:
 
 -- Submissions table:
 -- +---------+------------+

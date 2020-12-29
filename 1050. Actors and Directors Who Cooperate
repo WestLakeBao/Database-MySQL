@@ -1,13 +1,4 @@
 1050. Actors and Directors Who Cooperated At Least Three Time
--- Table: ActorDirector
--- +-------------+---------+
--- | Column Name | Type    |
--- +-------------+---------+
--- | actor_id    | int     |
--- | director_id | int     |
--- | timestamp   | int     |
--- +-------------+---------+
--- timestamp is the primary key column for this table.
 
 -- Write a SQL query that provides the pairs (actor_id, director_id) where the actor have cooperated with the director at least 3 times.
 

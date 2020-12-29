@@ -1,7 +1,4 @@
 0597. Friend Requests I: Overall Acceptance Rate
-
--- In social network like Facebook or Twitter, people send friend requests and accept others’ requests as well. 
-Now given two tables as below:
  
 -- Table: friend_request
 -- | sender_id | send_to_id |request_date|
@@ -21,7 +18,7 @@ Now given two tables as below:
 -- | 3            | 4           | 2016-06-09 |
 -- | 3            | 4           | 2016-06-10 |
  
--- Write a query to find the overall acceptance rate of requests rounded to 2 decimals, 
+-- find the overall acceptance rate of requests rounded to 2 decimals,
 -- which is the number of acceptance divide the number of requests.
  
 -- For the sample data above, your query should return the following result.
